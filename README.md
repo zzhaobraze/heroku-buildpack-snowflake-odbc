@@ -35,7 +35,7 @@ heroku buildpacks:add --index 1 https://buildpack-registry.s3.amazonaws.com/buil
 Add an [Aptfile](Appfile) to your Heroku root file with the following:
 ```
 unixodbc-dev
-https://raw.githubusercontent.com/zzhaobraze/heroku-buildpack-snowflake-odbc/master/snowflake-odbc-2.20.4.x86_64.deb
+https://raw.githubusercontent.com/zzhaobraze/heroku-buildpack-snowflake-odbc/master/snowflake-odbc.deb
 ```
 
 ## Snowflake Connection
@@ -58,7 +58,7 @@ Gemfile:
 ```
 gem 'odbc_adapter'
 ```
-or for newer version of Rails(5+) which updates [`bind_visitor` to `visitor`](https://github.com/localytics/odbc_adapter/pull/26) :
+or for newer version of Rails(5+) which updates [`bind_visitor` to `visitor`](https://github.com/localytics/odbc_adapter/pull/26) using this repo:
 ```
 gem 'odbc_adapter', :git => 'https://github.com/zzhaobraze/odbc_adapter.git'
 ```
